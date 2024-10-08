@@ -30,7 +30,7 @@ export const Pokemon = ()=>{
       }
     const api= async ()=>{
         try{
-        const fetchedData = await(await fetch("https://pokeapi.co/api/v2/pokemon?limit=20")).json();
+        const fetchedData = await(await fetch("https://pokeapi.co/api/v2/pokemon?limit=649")).json();
        const info =  fetchedData.results.map(async (poke)=>{
             const pokeInfo = await(await fetch(poke.url)).json();
             return pokeInfo ;

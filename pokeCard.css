@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Arial, Algerian;
+}
+.stats-container {
+    margin-top: 10px;  /* Space above the stats section */
+  }
+  
+  .stats-label {
+    display: block;
+    margin-bottom: 5px; /* Space between "Stats" label and the list */
+  }
+  .stats-item {
+    display: flex;
+    justify-content: space-between; /* Align stat name and value with space between */
+    padding-left: 30px; /* Space before the stats list */
+    margin-bottom: 5px; /* Space between each stat item */
+  }
+  
+  .stats-item span {
+    margin-right: 10px; /* Add spacing between stat name and value */
+  }
+  
+  
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    column-gap: 40px; /* Adds space between cards horizontally */
+    row-gap: 40px;   /* Adds space between cards vertically */
+    padding: 20px;
+    justify-items: center; /* Centers cards horizontally */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+.search-bar{
+    padding:5px;
+    align-items: center;
+    height: 50px;
+    width:  200px;
+    border-radius: 5px;
+}
+header {
+    text-align: center;
+}
+
+.Card {
+    border: 3px solid white;
+    border-radius: 8px;
+    box-shadow: 5px 5px rgba(194, 187, 187, 0.637);
+    padding: 20px;
+    width: 100%; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    background-color: white; /* Adds a background to visually separate cards */
+}
+
+.Card:hover {
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 7px 7px rgba(10, 10, 10, 0.637);
+}
+
+img {
+    width: 220px; /* Fixes image width */
+    height: 220px; /* Fixes image height */
+    object-fit: contain; /* Makes sure image covers the specified dimensions */
+    margin-bottom: 15px; /* Adds space between the image and text below */
+}
+
+.Card-details {
+    text-align: center;
+    font-size: 18px;
+}
+
+.types {
+    text-align: center;
+    display: flex;
+    gap: 10px; /* Adds space between each type */
+    justify-content: center; /* Centers the types inside the card */
+}
+
+.type {
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.contains {
+    margin: 5px;
+    display: block;
+    padding: 5px 5px;
+}
